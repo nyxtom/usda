@@ -24,7 +24,7 @@ type WebServer struct {
 }
 
 // NewWebServer returns a work client enabled http server
-func NewWebServer(config *workclient.Config, fd int, cmdArgs []string) *WebServer {
+func NewWebServer(config workclient.Config, fd int, cmdArgs []string) *WebServer {
 	server := new(WebServer)
 	server.cmdArgs = cmdArgs
 	server.httpServer = gracefulhttp.NewServer(config.WebAddr, 0)
@@ -37,7 +37,7 @@ func NewWebServer(config *workclient.Config, fd int, cmdArgs []string) *WebServe
 }
 
 // ServeWeb will create a web server, attach signal flags and run the worker
-func ServeWeb(config *workclient.Config, fd int, cmdArgs []string) {
+func ServeWeb(config workclient.Config, fd int, cmdArgs []string) {
 	server := NewWebServer(config, fd, cmdArgs)
 	server.AttachSignals()
 	server.Run()

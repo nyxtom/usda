@@ -12,7 +12,7 @@ import (
 	"github.com/nyxtom/workclient"
 )
 
-func attachWebFlags() func() *workclient.Config {
+func attachWebFlags() func() workclient.Config {
 	// standard configurations (statsd, http endpoint, reconnection timeout)
 	var statsdAddr = flag.String("statsd_addr", "", "address to statsd for publishing statistics about the stream")
 	var statsdInterval = flag.Int("statsd_interval", 2, "flush interval for the statsd client to the endpoint in seconds")
@@ -42,8 +42,8 @@ func attachWebFlags() func() *workclient.Config {
 
 	// configuration file option
 	var configFile = flag.String("config", "", "configuration file to load as an alternative to explicit flags (toml formatted)")
-	return func() *workclient.Config {
-		cfg := &workclient.Config{*statsdAddr, *statsdInterval, *statsdPrefix,
+	return func() workclient.Config {
+		cfg := workclient.Config{*statsdAddr, *statsdInterval, *statsdPrefix,
 			*stdErrLog, *graphiteAddr, *graphitePrefix,
 			*etcdAddr, *etcdCaCert, *etcdTlsKey, *etcdTlsCert, *etcdPrefixKey, *etcdHeartbeatTtl,
 			*serviceName, *hostname, *webAddr, *readTimeout, *writeTimeout, *maxHeaderBytes}
@@ -53,7 +53,7 @@ func attachWebFlags() func() *workclient.Config {
 	}
 }
 
-func loadConfig(cfg *workclient.Config, configFile string) *workclient.Config {
+func loadConfig(cfg workclient.Config, configFile string) workclient.Config {
 	if configFile != "" {
 		data, err := ioutil.ReadFile(configFile)
 		if err != nil {
