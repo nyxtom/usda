@@ -25,6 +25,9 @@ food actually comes from.
      * Ex vegetable: asparagus weather conditions by state
 * Simplified json api for returning data
 * Printable reports
+* Category or root level dashboard
+  * at risk food items
+  * underutilized food items?
 
 ## Examples
 
