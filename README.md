@@ -23,6 +23,8 @@ food actually comes from.
   * Users can make conclusions as to how this affects conditions
   * Ex: no rainfall for significant portion of year
      * Ex vegetable: asparagus weather conditions by state
+* Simplified json api for returning data
+* Printable reports
 
 ## Examples
 
