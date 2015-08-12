@@ -35,6 +35,20 @@ The following are categories of examples pertaining to how we might create a use
 
 CropScape (http://nassgeodata.gmu.edu/CropScape/) is a layer for visualizing the cropland data layer created from remote sensing sattelites. The particular application shown in the link demonstrates the ability to select areas on the map and query for particular crop acreage. The tool also visualizes crop acreage on a pixel level and using a color chart to denote various crop types. Statistic tools are provided to show estimations on pixel count to acreage for various types of land discovery. The tool provides filtering capabilities on regions, state level, county..etc. The tool will draw regions around the selected filter and allow the user to see statistics for that area while color coding individual pixels accordingly. The tool however does **lack** the ability to filter on a crop level (i.e. I only want to see corn pixels). The tool will allow the user to show all this on a yearly basis. The data seems to only improve in resolution as time moves on - making historical analysis not all that useful unfortunately. The tool also provides a swipe allowing the user to see the visual difference between two different points in time.
 
+### VegScape
+
+VegScape (http://nassgeodata.gmu.edu/VegScape/) is a layer for visualizing vegetation conditions over time. The tool actually provides the ability to show vegetation conditions in various formats over time in a bi-weekly or even daily time period. Formats depend on the use but the following (http://www.star.nesdis.noaa.gov/smcd/emb/vci/VH/) demonstrates that VCI (vegetation condition index). (Note: NOAA actually includes the ability to generate animations on a daily basis for these types of formats and others including fire risk..etc). The animation on the the page demonstrates the effects over time of usable vegetation. VegScape provides various formats including:
+
+* NDVI - Normalized Difference Vegetation Index
+
+```
+The Vegetation Condition images are created in two types, NDVI and Ratio. NDVI (Normalized Difference Vegetation Index) images are directly based on values created by the USGS's EROS Data Center in their biweekly composite [3] of AVHRR sensor data from one of the NOAA weather satellites. Prior to 1995, the NOAA-11 satellite was the source for AVHRR data. From 1995 to 1999, the NOAA-14 satellite provided AVHRR sensor coverage, but this satellite/sensor failed in 2000. Starting in 2001, the NOAA-16 satellite began providing AVHRR data for this data series. NOAA-16 started malfunctioning in 2004, with a scan motor problem. Images from NOAA-17 are used beginning with the 2004 season.
+
+The NDVI measures vegetation vigor caused by chlorophyll activity; this is sometimes called "greenness". These data have proven valuable to USDA policy officials in providing geographic location and monitoring information for vegetation condition in crop areas. NDVI values can theoretically range from -1 to +1; high values represent healthy, vigorous vegetation while low values typically depict bare soil and water.
+
+Ratio images compare current NDVI values to NDVI values from some previous period; these comparisons are expressed at NASS in the form of a percent change. There are two comparison ratios that can be created, a percent change from closest corresponding dates of the previous year plus a percent change from the median value of the corresponding periods from the previous three years (when 3 comparable years are available).
+```
+
 ### Citrus Fruit
 
 An example report is provided by the USDA on Citrus Fruit. (http://usda.mannlib.cornell.edu/usda/current/CitrFrui/CitrFrui-09-18-2014.pdf). This report specifies details in relationship to the following:
