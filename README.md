@@ -36,26 +36,3 @@ In addition, production and utilization is noted according to the state and poss
 Vegetable production reports demonstrate similar attributes to yield, production, utilization, value and acreage as citrus fruit categories. A sample report (http://usda.mannlib.cornell.edu/usda/current/Vege/Vege-09-04-2014.pdf) shows various food items and their reports over time. Additional comments are made with respect to individual food items about food production in relationship to climate conditions. For example, the report notes a decade long decline for asparagus acreage. We should be able to easily determine these trends without much effort using a standard linear regression model over expected acreage, yield and utilization. Since these items are perishable, stockpile is somewhat irrelevant and thus a contining decline in yield demonstrates risk for depletion. 
 
 Additional notes are made in the report with respect to weather conditions. Specifically, drought conditions and lack of rainfall during various seasons has a significant impact on crop production. We should be able to utilize the national weather service to show conditions for rainfall over time and determine whether a decline in production is related (otherwise, our visualizations should be able to note and simply graph rain conditions over time for a specific state as a sidenote.) In fact, many of the comments on the sample report note weather conditions affecting crop production (such as frosting during certain months, heavy rains during an off season..etc. 
-
-## License
-The MIT License (MIT)
-
-Copyright (c) 2015 Thomas Holloway
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
