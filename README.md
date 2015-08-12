@@ -11,7 +11,18 @@ food actually comes from.
 
 * Crop/Fruit/Vegetable/Food dashboard visualizing production, yield, acreage, value, price over time
   * Examples include: Oranges Dashboard
-  * Data is available for all of the attributes listed above at a state level as well, possibly county level
+  * Data is available for all of the attributes listed at state and possibly county level
+  * Should demonstrate assessment for risk
+* Integrate with national weather service or another api
+  * Determine if we can store major weather events
+    * droughts, extreme rainfall, frost
+  * Api for looking up temperature and rainfall over time
+  * Some maps on weather.com show frost and drought severity indicators
+    * possibly utilize this over time to visualize conditions
+* Visualize weather seasonal weather conditions as events
+  * Users can make conclusions as to how this affects conditions
+  * Ex: no rainfall for significant portion of year
+     * Ex vegetable: asparagus weather conditions by state
 
 ## Examples
 
