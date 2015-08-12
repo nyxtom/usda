@@ -25,6 +25,12 @@ Typically these are broken down by the citrus fruit type such as oranges, grapef
 
 In addition, production and utilization is noted according to the state and possibly county level. By leveraging this particular data set, we can visualize the percentage of production and utilization over time with reference to a given state. If for instance, 100% of a particular fruit happens to be produced by a single state or area and over time that area is in decline - conclusions can be drawn by the user as to the reasons why that is. For instance, if year after year yield is becoming less and less, while utilization remains steadily the same - we can conclude that our consumption is not the reason it is running out and perhaps climate may be a factor, or pests or other concerns.
 
+### Vegetables
+
+Vegetable production reports demonstrate similar attributes to yield, production, utilization, value and acreage as citrus fruit categories. A sample report (http://usda.mannlib.cornell.edu/usda/current/Vege/Vege-09-04-2014.pdf) shows various food items and their reports over time. Additional comments are made with respect to individual food items about food production in relationship to climate conditions. For example, the report notes a decade long decline for asparagus acreage. We should be able to easily determine these trends without much effort using a standard linear regression model over expected acreage, yield and utilization. Since these items are perishable, stockpile is somewhat irrelevant and thus a contining decline in yield demonstrates risk for depletion. 
+
+Additional notes are made in the report with respect to weather conditions. Specifically, drought conditions and lack of rainfall during various seasons has a significant impact on crop production. We should be able to utilize the national weather service to show conditions for rainfall over time and determine whether a decline in production is related (otherwise, our visualizations should be able to note and simply graph rain conditions over time for a specific state as a sidenote.) In fact, many of the comments on the sample report note weather conditions affecting crop production (such as frosting during certain months, heavy rains during an off season..etc. 
+
 ## License
 The MIT License (MIT)
 
