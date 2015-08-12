@@ -23,6 +23,8 @@ An example report is provided by the USDA on Citrus Fruit. (http://usda.mannlib.
 
 Typically these are broken down by the citrus fruit type such as oranges, grapefruits, lemons..etc. Each item details the bearing acreage, production (total, fresh, processed), value of production, yield per acre, utilization, price per box (all, fresh, processed). Simple graphs detailing individual food types will show some fairly significant trends such as the total bearing acreage over time in steady decline. By visualizing these items we may be able to show a very simple extrapolation to show if and when the particular food items are at risk for depletion.
 
+In addition, production and utilization is noted according to the state and possibly county level. By leveraging this particular data set, we can visualize the percentage of production and utilization over time with reference to a given state. If for instance, 100% of a particular fruit happens to be produced by a single state or area and over time that area is in decline - conclusions can be drawn by the user as to the reasons why that is. For instance, if year after year yield is becoming less and less, while utilization remains steadily the same - we can conclude that our consumption is not the reason it is running out and perhaps climate may be a factor, or pests or other concerns.
+
 ## License
 The MIT License (MIT)
 
