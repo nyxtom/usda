@@ -33,6 +33,10 @@ body, html {
       margin-right: 0px;
       margin-left: 10px;
   }
+  .navbar-item:last-child .navbar-link {
+      padding-right: 10px;
+      border-right: solid 1px #333;
+  }
   .navbar-item.logo .navbar-link {
       margin-left: 0px;
   }

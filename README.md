@@ -36,6 +36,13 @@ food actually comes from.
   * Crop distribution (less isolated)
   * Crop preference (note declining/increased/consistent utilization)
   * Crop + Farmers market seasonal availability
+* Nutrition Data
+  * http://ndb.nal.usda.gov/ndb/search/list
+  * Provide a simple api for showing nutrition information by product
+* Pesticides
+  * http://www.ams.usda.gov/datasets/pdp/pdpdata
+* Recalls
+  * http://www.foodsafety.gov/recalls/index.html
 
 ## Examples
 
@@ -83,6 +90,6 @@ In addition, production and utilization is noted according to the state and poss
 
 ### Vegetables
 
-Vegetable production reports demonstrate similar attributes to yield, production, utilization, value and acreage as citrus fruit categories. A sample report (http://usda.mannlib.cornell.edu/usda/current/Vege/Vege-09-04-2014.pdf) shows various food items and their reports over time. Additional comments are made with respect to individual food items about food production in relationship to climate conditions. For example, the report notes a decade long decline for asparagus acreage. We should be able to easily determine these trends without much effort using a standard linear regression model over expected acreage, yield and utilization. Since these items are perishable, stockpile is somewhat irrelevant and thus a contining decline in yield demonstrates risk for depletion. 
+Vegetable production reports demonstrate similar attributes to yield, production, utilization, value and acreage as citrus fruit categories. A sample report (http://usda.mannlib.cornell.edu/usda/current/Vege/Vege-09-04-2014.pdf) shows various food items and their reports over time. Additional comments are made with respect to individual food items about food production in relationship to climate conditions. For example, the report notes a decade long decline for asparagus acreage. We should be able to easily determine these trends without much effort using a standard linear regression model over expected acreage, yield and utilization. Since these items are perishable, stockpile is somewhat irrelevant and thus a contining decline in yield demonstrates risk for depletion.
 
-Additional notes are made in the report with respect to weather conditions. Specifically, drought conditions and lack of rainfall during various seasons has a significant impact on crop production. We should be able to utilize the national weather service to show conditions for rainfall over time and determine whether a decline in production is related (otherwise, our visualizations should be able to note and simply graph rain conditions over time for a specific state as a sidenote.) In fact, many of the comments on the sample report note weather conditions affecting crop production (such as frosting during certain months, heavy rains during an off season..etc. 
+Additional notes are made in the report with respect to weather conditions. Specifically, drought conditions and lack of rainfall during various seasons has a significant impact on crop production. We should be able to utilize the national weather service to show conditions for rainfall over time and determine whether a decline in production is related (otherwise, our visualizations should be able to note and simply graph rain conditions over time for a specific state as a sidenote.) In fact, many of the comments on the sample report note weather conditions affecting crop production (such as frosting during certain months, heavy rains during an off season..etc.
