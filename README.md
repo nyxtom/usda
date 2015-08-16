@@ -44,6 +44,9 @@ to dig through lots of reports or text. This application combines various data s
   * Climate Change / weather conditions
   * Import/Export Consumptions (are we growing enough of what we eat/consume locally?)
     * What more can we do locally, what grows best in what weather?
+* Hold and illuminate bad practice farming techniques
+  * EX: Outdated systems
+  * EX: Open field growing of thirsty vegetables
 
 ## Features / Proposals
 
@@ -74,6 +77,19 @@ to dig through lots of reports or text. This application combines various data s
   * Crop distribution (less isolated)
   * Crop preference (note declining/increased/consistent utilization)
   * Crop + Farmers market seasonal availability
+  * What percentage and where might open-spray irrigation systems be in use?
+  * What percentage do we rely on certain crops in isolated locations?
+    * Percentage of all crops produced by state
+    * Percentage of all crops produced by county
+    * Percentage of individual crops produced by state/county
+    * Percentage of crops with high dependency (threshold > 90%) produced by state/county
+    * With these type of questions on dependency, we can see how reliant industrial farming
+    is on certain locations in the United States.
+  * Crops produced using poor farming practice and where
+    * Open field growing of lettuce/thirsty vegetables better suited for greenhouses
+    * Outdated irrigation practices
+* Water data
+  * Not quite sure where this data is available, but it would be incredible to understand and at least show how much water is consumed due to agriculture, or at least break it down by where its going.
 * Nutrition Data
   * http://ndb.nal.usda.gov/ndb/search/list
   * Provide a simple api for showing nutrition information by product
