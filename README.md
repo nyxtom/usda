@@ -7,6 +7,44 @@ and data exploration to help bring to light answers to important questions such 
 crop yield over time, the relationship to climate change, to simpler questions such as where
 food actually comes from.
 
+## Audience
+
+Audience proposed is targeted at end-users typically those who are citizens who have an interest
+in the data science and exploration of information reported by the United States Department of Agriculture.
+Example websites that may be of concern to such users would be [analytics.usa.gov](analytics.usa.gov), [US Open Data](http://www.data.gov/). The attempt is to modernize the accessibility of this information from isolated toolsets and reports into an interactive web application that anyone can view and explore.
+
+* Citizens of United States
+* Data Scientists or Engineers, Analysts
+* Agricultural Analysts
+* Economists
+* Government Officials
+
+The above list of users are typically concerned with seeing and having access to information without having
+to dig through lots of reports or text. This application combines various data sets, apis and reports into an interactive feature-set that can be utilized in one stop.
+
+## Design Goals
+
+* Fast, high performance web server continuously downloading the latest data sets
+* Visualize United States Food Production
+  * Safety, Economic Demand, Preference/Consumption Rates, Yield, Climate Conditions
+* Avoid login/signup procedure until further notice of necessity
+* Data exploration, visualizations, apis should be public to all users
+* To access the api, it may be rate limited at first, use jwt
+* Home page should immediately provide the most important visualizations related to USDA datasets
+* [analytics.usa.gov](analytics.usa.gov) is a good example of publicly accessibly government data visualized
+* Avoid separating content with pages as this jumps users around (potentially too much)
+* Illuminate at risk, summarized, answered questions on main page
+  * Additional details, search provides more detailed content on a per product basis
+* Inform users what the data actually is and where it came from (must reference!)
+* Provide users with an application that is an informative tool to existing data, not selling a product
+* Using Data and Science to Fight for Truth
+  * Hazards of industrial food production practices
+  * Pesticides and Insecticides, GMOs
+  * Environmental Concerns
+  * Climate Change / weather conditions
+  * Import/Export Consumptions (are we growing enough of what we eat/consume locally?)
+    * What more can we do locally, what grows best in what weather?
+
 ## Features / Proposals
 
 * Crop/Fruit/Vegetable/Food dashboard visualizing production, yield, acreage, value, price over time
@@ -43,6 +81,8 @@ food actually comes from.
   * http://www.ams.usda.gov/datasets/pdp/pdpdata
 * Recalls
   * http://www.foodsafety.gov/recalls/index.html
+* International Food Composition and Resources
+  * https://fnic.nal.usda.gov/food-composition/international-food-composition-resources
 
 ## Examples
 

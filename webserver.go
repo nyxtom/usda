@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"html/template"
 	"net/http"
 	"os"
 	"os/exec"
@@ -10,6 +9,7 @@ import (
 	"path"
 	"strings"
 	"syscall"
+	"text/template"
 
 	"github.com/nyxtom/gracefulhttp"
 	"github.com/nyxtom/workclient"
@@ -99,7 +99,7 @@ func (server *WebServer) listen() {
 	//handleFunc("/restart", server.logReq, server.restart)
 	//handleFunc("/shutdown", server.logReq, server.shutdown)
 	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("./app/css"))))
-	http.Handle("/img/", http.StripPrefix("/img/", http.FileServer(http.Dir("./app/img"))))
+	http.Handle("/imgs/", http.StripPrefix("/imgs/", http.FileServer(http.Dir("./app/imgs"))))
 	http.Handle("/js/", http.StripPrefix("/js/", http.FileServer(http.Dir("./app/js"))))
 	items := []string{"apple-touch-icon.png", "crossdomain.xml", "favicon.ico", "humans.txt", "robots.txt", "tile-wide.png", "tile.png", "browserconfig.xml"}
 	for _, k := range items {
@@ -125,6 +125,10 @@ func (server *WebServer) logReq(w http.ResponseWriter, req *http.Request) {
 
 func (server *WebServer) index(w http.ResponseWriter, req *http.Request) {
 	lp := path.Join("app", "index.html")
+	server.handleTemplate(w, req, lp)
+}
+
+func (server *WebServer) handleTemplate(w http.ResponseWriter, req *http.Request, lp string) {
 	tmpl, err := template.ParseFiles(lp)
 	if err != nil {
 		server.LogErr(err)
