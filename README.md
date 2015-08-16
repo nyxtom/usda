@@ -87,7 +87,7 @@ to dig through lots of reports or text. This application combines various data s
     is on certain locations in the United States.
   * Crops produced using poor farming practice and where
     * Open field growing of lettuce/thirsty vegetables better suited for greenhouses
-    * Outdated irrigation practices
+    * Outdated irrigation practices (open air irrigation in hot climates! rather than drip-irrigation systems that provide water directly to the source rather than allow most of the wasted water to be evaporated due to open-air heat)
 * Water data
   * Not quite sure where this data is available, but it would be incredible to understand and at least show how much water is consumed due to agriculture, or at least break it down by where its going.
 * Nutrition Data
